@@ -4,7 +4,6 @@ public class TestaPerfilDeSaude {
 
 	public static void main(String[] args) {
 		PerfilDeSaude novoPerfil = new PerfilDeSaude("Lucas", "Pires", "Masculino", "28/01/1994", 1.71, 92);
-
 		
 		System.out.println("=======Formulário=======");
 		System.out.println("Paciente: " + novoPerfil.getNome() + " " + novoPerfil.getSobreNome());
@@ -18,7 +17,6 @@ public class TestaPerfilDeSaude {
 		System.out.println("Frequencia Cardiaca alvo mín: " + novoPerfil.getFrequenciaCardiacaAlvoMin());
 		System.out.printf("IMC: %.2f", novoPerfil.getImc());
 		System.out.println("\n====================");
-		
 	}
 
 }
