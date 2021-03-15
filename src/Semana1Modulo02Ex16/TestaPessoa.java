@@ -5,7 +5,7 @@ import java.text.ParseException;
 public class TestaPessoa {
 
 	public static void main(String[] args){
-		Pessoa novaPessoa = new Pessoa("Lucas Pires", "123456789108");
+		Pessoa novaPessoa = new Pessoa("Lucas Pires", "12345678910");
 
 		boolean cpf = novaPessoa.validaCPF(novaPessoa.getCpf());
 		if (cpf) {
