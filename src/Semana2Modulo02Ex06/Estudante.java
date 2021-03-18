@@ -9,6 +9,11 @@ public class Estudante {
 	protected int idade;
 	protected int matricula;
 	
+	public Estudante (String nome, String sobreNome) {
+		this.nome = nome;
+		this.sobreNome = sobreNome;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -36,9 +41,7 @@ public class Estudante {
 	public String getCursoMatriculado() {
 		return cursoMatriculado;
 	}
-	public void setCursoMatriculado(String cursoMatriculado) {
-		this.cursoMatriculado = cursoMatriculado;
-	}
+	
 	public int getIdade() {
 		return idade;
 	}
@@ -52,5 +55,13 @@ public class Estudante {
 		this.matricula = matricula;
 	}
 	
+	public void cadastroAluno(String curso) {
+		this.cursoMatriculado = curso;
+		System.out.printf("O aluno %s foi registrado no curso %s!", this.nome, curso);
+	}
 	
+	@Override
+	public String toString() {
+		return String.format("%s: %s %s%n %s", "Aluno", this.nome, this.sobreNome, "Data de nacsimento", this.dataDeNascimento);
+	}
 }
