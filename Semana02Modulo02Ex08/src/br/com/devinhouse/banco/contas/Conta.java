@@ -28,4 +28,9 @@ public class Conta {
 		sacar(valor);
 		conta.depositar(valor);
 	}
+	
+	public void getTipo() {
+		System.out.println("Conta");
+	}
+	
 }

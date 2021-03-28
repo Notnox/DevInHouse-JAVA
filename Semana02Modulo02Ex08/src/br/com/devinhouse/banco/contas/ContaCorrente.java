@@ -6,6 +6,10 @@ public class ContaCorrente extends Conta {
 		super(nome, sobreNome, saldo);
 	}
 	
+	public void getTipo() {
+		System.out.println("Conta Corrente");
+	}
+	
 	@Override
 	public void sacar(double valor) {
 		this.saldo -= (valor + 0.10);

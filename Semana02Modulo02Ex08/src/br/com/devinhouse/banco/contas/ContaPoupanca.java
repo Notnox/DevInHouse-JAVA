@@ -6,6 +6,10 @@ public class ContaPoupanca extends Conta {
 		super(nome, sobreNome, saldo);
 	}
 	
+	public void getTipo() {
+		System.out.println("Conta Poupança");
+	}
+	
 	public void renderJurosDePoupanca() {
 		double rendimento = super.getSaldo() * 0.01;
 		
