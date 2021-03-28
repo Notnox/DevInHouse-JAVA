@@ -4,7 +4,7 @@ public class Funcionario {
 	private String nome;
 	private String sobreNome;
 	private String cpf;
-	private double salario;
+	protected double salario;
 	
 	public Funcionario (String nome, String sobreNome, String cpf, double salario) {
 		this.nome = nome;
@@ -45,5 +45,8 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	
+	public double calcularBonificacao() {
+		return this.salario * .1;
+	}
+
 }
