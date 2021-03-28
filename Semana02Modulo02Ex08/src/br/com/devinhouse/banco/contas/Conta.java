@@ -4,20 +4,24 @@ import br.com.devinhouse.banco.funcionarios.Funcionario;
 
 public class Conta {
 	private static int numeroDeContas;
+	protected double saldo;
 	Funcionario funcionario;
 	
-	public Conta(String nome, String sobreNome) {
+	public Conta(String nome, String sobreNome, double saldo) {
+		this.saldo = saldo;
 		numeroDeContas++;
 	}
 	
+	public double getSaldo() {
+		return saldo;
+	}
+
 	public void depositar(double valor) {
-		double valorTotal = this.funcionario.getSalario() + valor;
-		this.funcionario.setSalario(valorTotal);
+		this.saldo += valor;
 	}
 	
 	public void sacar(double valor) {
-		double valorFinal = this.funcionario.getSalario() - valor;
-		this.funcionario.setSalario(valorFinal);
+		this.saldo -= valor;
 	}
 	
 	public void transferir(double valor, Conta conta) {
