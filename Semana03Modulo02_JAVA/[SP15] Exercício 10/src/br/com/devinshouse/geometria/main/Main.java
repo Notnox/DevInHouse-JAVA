@@ -8,21 +8,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		FormaBidimensional formaBi = new FormaBidimensional(0, 4, 4, 4, 0, 0, 4, 0);
+		FormaBidimensional formaBi2 = new FormaBidimensional(0, 4, 4, 4, 0, 0, 4, 0);
 		FormaTridimensional formaTri = new  FormaTridimensional(0, 4, 4, 4,
 				4, 4, 0, 0,
 				4, 4, 0, 4, 
 				0, 4, 0, 4, 
 				4, 0, 0, 0, 
 				0, 4, 0, 0);
+		FormaTridimensional formaTri2 = new  FormaTridimensional(0, 4, 4, 4,
+				4, 4, 0, 0,
+				4, 4, 0, 4, 
+				0, 4, 0, 4, 
+				4, 0, 0, 0, 
+				0, 4, 0, 0);
 		
-		Forma arrayFormas[] = new Forma[2];
-		arrayFormas[0] = formaBi;
-		arrayFormas[1] = formaTri;
-		
-		for (Forma f : arrayFormas) {
-			Forma.getForma(f);
-		}
-		
+		if (formaBi.equals(formaBi2)) {System.out.println("Mesma forma!");} else {System.out.println("Outra forma!");}
+		if (formaTri.equals(formaTri2)) {System.out.println("Mesma forma!");} else {System.out.println("Outra forma!");}
+		if (formaTri.equals(formaBi)) {System.out.println("Mesma forma!");} else {System.out.println("Outra forma!");}
 	}
 	
 }

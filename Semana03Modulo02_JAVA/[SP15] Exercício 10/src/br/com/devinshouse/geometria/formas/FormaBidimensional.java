@@ -13,4 +13,17 @@ public class FormaBidimensional extends Forma {
 		double altura = super.duasDimenssoes.getPontoAY() - super.duasDimenssoes.getPontoDY();
 		return comprimento * altura;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		FormaBidimensional that = (FormaBidimensional) o;
+		return super.duasDimenssoes.getPontoA().equals(that.duasDimenssoes.getPontoA()) &&
+				super.duasDimenssoes.getPontoB().equals(that.duasDimenssoes.getPontoB()) &&
+				super.duasDimenssoes.getPontoC().equals(that.duasDimenssoes.getPontoC()) &&
+				super.duasDimenssoes.getPontoD().equals(that.duasDimenssoes.getPontoD()) ;
+	}
+
+	
 }

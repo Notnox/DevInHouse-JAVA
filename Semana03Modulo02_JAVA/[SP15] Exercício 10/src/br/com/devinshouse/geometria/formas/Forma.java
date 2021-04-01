@@ -58,6 +58,7 @@ public abstract class Forma {
 	public double getVolume() {
 		return 0;
 	}
-
+	
+	public abstract boolean equals(Object o);
 	public abstract double getArea();
 }

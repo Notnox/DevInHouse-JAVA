@@ -25,4 +25,19 @@ public class FormaTridimensional extends Forma {
 		double altura =  super.tresDimenssoes.getPontoAZ() - super.tresDimenssoes.getPontoEZ();
 		return getArea() * altura;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		FormaTridimensional that = (FormaTridimensional) o;
+		return super.tresDimenssoes.getPontoA().equals(that.tresDimenssoes.getPontoA()) &&
+				super.tresDimenssoes.getPontoB().equals(that.tresDimenssoes.getPontoB()) &&
+				super.tresDimenssoes.getPontoC().equals(that.tresDimenssoes.getPontoC()) &&
+				super.tresDimenssoes.getPontoD().equals(that.tresDimenssoes.getPontoD()) &&
+				super.tresDimenssoes.getPontoE().equals(that.tresDimenssoes.getPontoE()) &&
+				super.tresDimenssoes.getPontoF().equals(that.tresDimenssoes.getPontoF()) &&
+				super.tresDimenssoes.getPontoG().equals(that.tresDimenssoes.getPontoG()) &&
+				super.tresDimenssoes.getPontoH().equals(that.tresDimenssoes.getPontoH());
+	}
 }
