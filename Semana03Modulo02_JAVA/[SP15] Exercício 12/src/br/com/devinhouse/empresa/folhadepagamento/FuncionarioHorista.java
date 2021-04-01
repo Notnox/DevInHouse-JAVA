@@ -6,8 +6,8 @@ public class FuncionarioHorista extends Funcionario {
 	private double salarioHora;
 	private int horaTrabalhada;
 	
-	public FuncionarioHorista(String nome, String sobreNome, double salarioHora, int horaTrabalhada) {
-		super(nome, sobreNome);
+	public FuncionarioHorista(String nome, String sobreNome, double salarioHora, int horaTrabalhada, int dia, int mes, int ano) {
+		super(nome, sobreNome, dia, mes, ano);
 		this.salarioHora = Utilitario.validarValorPositivo(salarioHora);
 		this.horaTrabalhada = (int) Utilitario.validarValorPositivo(horaTrabalhada);
 	}
@@ -30,12 +30,14 @@ public class FuncionarioHorista extends Funcionario {
 
 	@Override
 	public double calcularSalarioMensal() {
-		return this.salarioHora * this.horaTrabalhada;
+		double bonificacao = 0;
+		if (super.bonificacaoAniversario()) {bonificacao = 100;}
+		return this.salarioHora * this.horaTrabalhada + bonificacao;
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("%s%nHoras trabalhadas: R$%d%n"
+		return String.format("%sHoras trabalhadas: R$%d%n"
 				+ "Valor da hora: R$%.2f%n"
 				+ "Salário mês: R$%.2f%n", 
 				super.toString(), this.horaTrabalhada, this.salarioHora, this.calcularSalarioMensal());

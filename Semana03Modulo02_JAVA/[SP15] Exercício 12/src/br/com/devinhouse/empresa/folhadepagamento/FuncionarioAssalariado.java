@@ -5,8 +5,8 @@ import br.com.devinhouse.empresa.utils.Utilitario;
 public class FuncionarioAssalariado extends Funcionario {
 	private double salario;
 	
-	public FuncionarioAssalariado(String nome, String sobreNome, double salario) {
-		super(nome, sobreNome);
+	public FuncionarioAssalariado(String nome, String sobreNome, double salario, int dia, int mes, int ano) {
+		super(nome, sobreNome, dia, mes, ano);
 		this.salario = Utilitario.validarValorPositivo(salario);
 	}
 
@@ -16,12 +16,14 @@ public class FuncionarioAssalariado extends Funcionario {
 
 	@Override
 	public double calcularSalarioMensal() {
-		return this.salario;
+		double bonificacao = 0;
+		if (super.bonificacaoAniversario()) {bonificacao = 100;}
+		return this.salario + bonificacao;
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("%s%n%s: R$%.2f", super.toString(), "Salário mensal", this.salario);
+		return String.format("%s%s: R$%.2f%n", super.toString(), "Salário mensal", this.calcularSalarioMensal());
 	}
 	
 }
