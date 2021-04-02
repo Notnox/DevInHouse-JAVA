@@ -1,8 +1,10 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="br.com.devinhouse.banco.conta.Conta"><rhs name\="br.com.devinhouse.banco.conta.ContaCorrente"/></lhs><lhs name\="br.com.devinhouse.banco.conta.ContaCorrente"><rhs name\="br.com.devinhouse.banco.conta.ContaCorrente"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="br.com.devinhouse.banco.conta.Conta"><rhs name\="br.com.devinhouse.banco.conta.ContaCorrente"/></lhs><lhs name\="br.com.devinhouse.banco.conta.ContaCorrente"><rhs name\="br.com.devinhouse.banco.conta.ContaCorrente"/></lhs><lhs name\="br.com.devinshouse.geometria.formas.Forma"><rhs name\="br.com.devinshouse.geometria.formas.FormaTridimensional"/><rhs name\="br.com.devinshouse.geometria.formas.FormaBidimensional"/></lhs><lhs name\="br.com.devinshouse.geometria.formas.FormaBidimensional"><rhs name\="br.com.devinshouse.geometria.formas.FormaBidimensional"/></lhs><lhs name\="br.com.devinshouse.geometria.pontos.DuasDimenssoes"><rhs name\="br.com.devinshouse.geometria.pontos.DuasDimenssoes"/></lhs><lhs name\="br.com.devinshouse.geometria.pontos.TresDimenssoes"><rhs name\="br.com.devinshouse.geometria.pontos.TresDimenssoes"/></lhs><lhs name\="br.com.devinshouse.geometria.formas.FormaTridimensional"><rhs name\="br.com.devinshouse.geometria.formas.FormaTridimensional"/></lhs><lhs name\="br.com.devinhouse.empresa.utils.DataDeNascimento"><rhs name\="br.com.devinhouse.empresa.utils.DataDeNascimento"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=21
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
