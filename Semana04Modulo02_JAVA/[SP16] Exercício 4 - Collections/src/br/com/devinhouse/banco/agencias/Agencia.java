@@ -26,12 +26,4 @@ public class Agencia {
 		return contas.size();
 	}
 	
-	public Conta buscaPorTitular(String titular) {
-		for (Conta conta : contas) {
-			if (conta.getNome() == titular ) {
-				return conta;
-			}
-		}
-		return null;
-	}
 }

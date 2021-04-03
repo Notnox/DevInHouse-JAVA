@@ -31,7 +31,8 @@ public class Main {
 		agencia.adiciona(cp3);
 		agencia.adiciona(cp4);
 		
-		System.out.println(agencia.buscaPorTitular("nome2"));
+		System.out.printf("A agencia %s possui %d contas cadastradas.", agencia.getNumeroDaAgencia(), agencia.getQuantidadeDeContas());
+		
 	}
 
 }
