@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Novo Notnox\eclipse-workspace\DevInHouse-JAVA\Semana05Modulo02_JAVA\[SP17] Exercício 6 - Maven\.metadata\.plugins\org.eclipse.jdt.core
+3393883626.index
